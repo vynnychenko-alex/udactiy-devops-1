@@ -255,10 +255,9 @@ Resources:
           cd /var/www/html
           echo "It works! Udagram, Udacity" > index.html
       ImageId: ami-0263e4deb427da90e
-      KeyName: VocareumKey2
       SecurityGroups:
       - Ref: WebServerSecGroup
-      InstanceType: t2.medium
+      InstanceType: t3.medium
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"
         Ebs:
